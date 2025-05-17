@@ -1,0 +1,31 @@
+
+For simulation, please go to https://www.falstad.com/circuit/circuitjs.html
+Go to file > import from text > Paste the code below and press ok.
+
+
+$ 1 0.000005 10.20027730826997 50 5 50 5e-11
+r 848 112 848 192 0 50000
+r 848 192 848 272 0 5000
+r 848 272 848 352 0 7000
+r 848 352 848 448 0 9000
+r 848 448 848 512 0 12000
+v 784 656 672 656 0 0 40 10 0 0 0.5
+w 672 656 432 656 0
+s 432 656 848 512 0 0 false
+s 432 656 848 448 0 0 false
+s 432 656 848 352 0 1 false
+s 432 656 848 272 0 1 false
+s 432 656 848 192 0 1 false
+w 784 656 1200 656 0
+p 848 192 1200 656 3 0 0 10000000
+w 848 112 1200 112 0
+r 848 512 848 560 0 15000
+s 432 656 848 560 0 0 false
+w 1200 112 1200 656 0
+
+
+
+Check the voltage across the voltmeter by sequentially turning on and off switches. 
+
+Application example: Consider switches as level switches from the bottom to the top of the tank. Voltage will increase based on the contact from bottom to top. Now you can use the analog output to your PLC input. 
+Use a 5V source for a microcontroller-based AD application and adjust your resistor values. 
